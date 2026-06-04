@@ -1,4 +1,10 @@
 import React, { useState } from "react";
+import service1 from "../assets/images/service-1.png";
+import service2 from "../assets/images/service-2.png";
+import service3 from "../assets/images/service-3.png";
+import service4 from "../assets/images/service-4.png";
+import heroBanner from "../assets/images/hero-banner.png";
+import aboutBanner from "../assets/images/about-banner.png";
 
 const Kenyanservices = () => {
   const eaglecoreKenyaSlides = [
@@ -7,8 +13,7 @@ const Kenyanservices = () => {
       title: "NTSA Services",
       description:
         "Driving licence, PSV, logbook transfer and motor vehicle processing services.",
-      image:
-        "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
+      image: service1,
       sections: [
         {
           heading: "Driving Licence Services",
@@ -63,8 +68,7 @@ const Kenyanservices = () => {
       title: "KRA Services",
       description:
         "KRA PIN registration, tax filing, VAT, PAYE and compliance certificate services.",
-      image:
-        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop",
+      image: service2,
       sections: [
         {
           heading: "Registration and Filing Returns Services",
@@ -122,8 +126,7 @@ const Kenyanservices = () => {
       title: "BRS  services",
       description:
         "Company setup, CR12 processing, annual returns and LLP registration services.",
-      image:
-        "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
+      image: service3,
       sections: [
         {
           heading: "Company Registration Services",
@@ -183,8 +186,7 @@ const Kenyanservices = () => {
       title: "Passport Application",
       description:
         "Passport application, renewal and replacement processing services.",
-      image:
-        "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1200&auto=format&fit=crop",
+      image: service4,
       sections: [
         {
           heading: "New Application Requirements",
@@ -223,8 +225,7 @@ const Kenyanservices = () => {
       title: "VISA APPLICATION",
       description:
         "International visa processing support for global destinations.",
-      image:
-        "https://images.unsplash.com/photo-1502920917128-1aa500764ce7?q=80&w=1200&auto=format&fit=crop",
+      image: heroBanner,
       sections: [
         {
           heading: "Countries Supported",
@@ -245,8 +246,7 @@ const Kenyanservices = () => {
       title: "Civil Registration Services",
       description:
         "Birth certificates, marriage registration and government online services.",
-      image:
-        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop",
+      image: aboutBanner,
       sections: [
         {
           heading: "Child Birth Certificate Requirements",

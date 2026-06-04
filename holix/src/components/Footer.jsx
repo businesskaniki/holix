@@ -16,12 +16,9 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top section">
-        <div className="container">
-          {/* BRAND */}
+        <div className="container footer-grid">
           <div className="footer-brand">
-            <a href="#" className="logo">
-              EagleCore
-            </a>
+            <a href="#" className="logo">EagleCore</a>
 
             <p className="footer-text">
               EagleCore is a trusted partner for Kenyan and international
@@ -29,7 +26,7 @@ const Footer = () => {
               with clear guidance and reliable follow-up.
             </p>
 
-            <form className="newsletter-form">
+            <form className="newsletter-form" aria-label="Subscribe to newsletter">
               <input
                 type="email"
                 name="email_address"
@@ -38,62 +35,61 @@ const Footer = () => {
                 className="email-field"
               />
 
-              <button type="submit" className="form-btn">
+              <button type="submit" className="form-btn" aria-label="Subscribe">
                 <Icon path="M2 21l21-9L2 3v7l15 2-15 2z" />
               </button>
             </form>
+
+            <div className="footer-socials" aria-hidden="false">
+              <a href="#" className="social-link facebook" aria-label="Facebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="#" className="social-link instagram" aria-label="Instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#" className="social-link tiktok" aria-label="TikTok">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+            </div>
           </div>
 
-          {/* SERVICES */}
-          <ul className="footer-list">
-            <li>
-              <p className="footer-list-title">Our Services</p>
-            </li>
-            <li><a className="footer-link">Visa Applications</a></li>
-            <li><a className="footer-link">Immigration Support</a></li>
-            <li><a className="footer-link">Business Registration</a></li>
-            <li><a className="footer-link">Passport Services</a></li>
-            <li><a className="footer-link">Civil Registration</a></li>
-          </ul>
+          <nav className="footer-nav">
+            <p className="footer-list-title">Our Services</p>
+            <ul>
+              <li><a className="footer-link">Visa Applications</a></li>
+              <li><a className="footer-link">Immigration Support</a></li>
+              <li><a className="footer-link">Business Registration</a></li>
+              <li><a className="footer-link">Passport Services</a></li>
+              <li><a className="footer-link">Civil Registration</a></li>
+            </ul>
+          </nav>
 
-          {/* COMPANY */}
-          <ul className="footer-list">
-            <li>
-              <p className="footer-list-title">Company</p>
-            </li>
-            <li><a className="footer-link">About Company</a></li>
-            <li><a className="footer-link">Our Services</a></li>
-            <li><a className="footer-link">Contact Us</a></li>
-          </ul>
+          <nav className="footer-nav">
+            <p className="footer-list-title">Company</p>
+            <ul>
+              <li><a className="footer-link">About Company</a></li>
+              <li><a className="footer-link">Our Services</a></li>
+              <li><a className="footer-link">Contact Us</a></li>
+            </ul>
+          </nav>
 
-          {/* CONTACT INFO */}
-          <ul className="footer-list">
-            <li>
-              <p className="footer-list-title">Contact Us</p>
-            </li>
+          <div className="footer-contact">
+            <p className="footer-list-title">Contact Us</p>
+            <address className="contact-block">
+              <p className="contact-line">Pioneer Building, Koinange Street</p>
+              <p className="contact-line">1st floor, Room 216</p>
+            </address>
 
-            <li className="footer-item">
-              <Icon path="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" />
-              <address className="contact-link address">
-                Pioneer Building, Koinange Street, opposite Smoking Zone, 1st
-                floor, Room 216
-              </address>
-            </li>
+            <p className="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="tel:+254713628062" className="contact-link">+254 713 628 062</a>
+            </p>
 
-            <li className="footer-item">
-              <Icon path="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.21 2.2z" />
-              <a href="tel:+254713628062" className="contact-link">
-                +254 713 628 062
-              </a>
-            </li>
-
-            <li className="footer-item">
-              <Icon path="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z" />
-              <a href="mailto:kiptumpeter@gmail.com" className="contact-link">
-                kiptumpeter@gmail.com
-              </a>
-            </li>
-          </ul>
+            <p className="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="mailto:kiptumpeter@gmail.com" className="contact-link">kiptumpeter@gmail.com</a>
+            </p>
+          </div>
         </div>
       </div>
 

@@ -1,4 +1,10 @@
 import React, { useState } from "react";
+import service1 from "../assets/images/service-1.png";
+import service2 from "../assets/images/service-2.png";
+import service3 from "../assets/images/service-3.png";
+import service4 from "../assets/images/service-4.png";
+import heroBanner from "../assets/images/hero-banner.png";
+import aboutBanner from "../assets/images/about-banner.png";
 
 const ForeignServices = () => {
   const foreignServiceSlides = [
@@ -13,8 +19,7 @@ const ForeignServices = () => {
       description:
         "Processing and support for Kenya work permits issued to foreign nationals engaging in employment, investment, consultancy, missionary work and residence.",
 
-      image:
-        "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
+      image: service3,
 
       sections: [
         {
@@ -51,8 +56,7 @@ const ForeignServices = () => {
       description:
         "Support for temporary entry permissions, dependant processing, foreign student documentation and internship approvals.",
 
-      image:
-        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop",
+      image: aboutBanner,
 
       sections: [
         {
@@ -82,8 +86,7 @@ const ForeignServices = () => {
       description:
         "Application assistance for Kenya ETA approvals including transit, standard and multiple-entry authorizations.",
 
-      image:
-        "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1200&auto=format&fit=crop",
+      image: service4,
 
       sections: [
         {
@@ -113,8 +116,7 @@ const ForeignServices = () => {
       description:
         "Visa consultation and application support for tourism, business travel, studies and international relocation.",
 
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEfOniAc2jQDVcQaY7jv67nf2ebmVUdFdVOg&s",
+      image: heroBanner,
 
       sections: [
         {

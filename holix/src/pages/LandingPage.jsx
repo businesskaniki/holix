@@ -1,11 +1,11 @@
 import React from "react";
 import AboutPage from "./AboutPage";
 import Services from "./Services";
-import { Form } from "react-router-dom";
 import FeaturesPage from "./FeaturesPage";
 import FAQ from "../components/FAQ";
-import heroB from "../assets/images/hero-banner.png"
-import pattern from "../assets/images/hero-pattern.svg"
+import ContactSection from "../components/ContactSection";
+import heroB from "../assets/images/hero-banner.png";
+import pattern from "../assets/images/hero-pattern.svg";
 const LandingPage = () => {
   return (
     <>
@@ -70,6 +70,7 @@ const LandingPage = () => {
     <Services />
     <FeaturesPage />
     <FAQ />
+    <ContactSection />
     </>
   );
 };

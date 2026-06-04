@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
+import SocialIcons from "./components/SocialIcons";
 import LandingPage from "./pages/LandingPage";
 import Footer from "./components/Footer";
 import Kenyanservices from "./pages/Kenyanservices";
@@ -11,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
+      <SocialIcons />
 
       <main>
         <article>
