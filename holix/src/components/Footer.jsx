@@ -18,7 +18,9 @@ const Footer = () => {
       <div className="footer-top section">
         <div className="container footer-grid">
           <div className="footer-brand">
-            <a href="#" className="logo">EagleCore</a>
+            <a href="#" className="logo">
+              EagleCore
+            </a>
 
             <p className="footer-text">
               EagleCore is a trusted partner for Kenyan and international
@@ -26,7 +28,10 @@ const Footer = () => {
               with clear guidance and reliable follow-up.
             </p>
 
-            <form className="newsletter-form" aria-label="Subscribe to newsletter">
+            <form
+              className="newsletter-form"
+              aria-label="Subscribe to newsletter"
+            >
               <input
                 type="email"
                 name="email_address"
@@ -41,10 +46,18 @@ const Footer = () => {
             </form>
 
             <div className="footer-socials" aria-hidden="false">
-              <a href="#" className="social-link facebook" aria-label="Facebook">
+              <a
+                href="#"
+                className="social-link facebook"
+                aria-label="Facebook"
+              >
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
-              <a href="#" className="social-link instagram" aria-label="Instagram">
+              <a
+                href="#"
+                className="social-link instagram"
+                aria-label="Instagram"
+              >
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
               <a href="#" className="social-link tiktok" aria-label="TikTok">
@@ -56,20 +69,30 @@ const Footer = () => {
           <nav className="footer-nav">
             <p className="footer-list-title">Our Services</p>
             <ul>
-              <li><a className="footer-link">Visa Applications</a></li>
-              <li><a className="footer-link">Immigration Support</a></li>
-              <li><a className="footer-link">Business Registration</a></li>
-              <li><a className="footer-link">Passport Services</a></li>
-              <li><a className="footer-link">Civil Registration</a></li>
+              <li>
+                <a className="footer-link">Visa Applications</a>
+              </li>
+              <li>
+                <a className="footer-link">Immigration Support</a>
+              </li>
+              <li>
+                <a className="footer-link">Business Registration</a>
+              </li>
             </ul>
           </nav>
 
           <nav className="footer-nav">
             <p className="footer-list-title">Company</p>
             <ul>
-              <li><a className="footer-link">About Company</a></li>
-              <li><a className="footer-link">Our Services</a></li>
-              <li><a className="footer-link">Contact Us</a></li>
+              <li>
+                <a className="footer-link">About Company</a>
+              </li>
+              <li>
+                <a className="footer-link">Our Services</a>
+              </li>
+              <li>
+                <a className="footer-link">Contact Us</a>
+              </li>
             </ul>
           </nav>
 
@@ -82,12 +105,16 @@ const Footer = () => {
 
             <p className="contact-item">
               <ion-icon name="call-outline"></ion-icon>
-              <a href="tel:+254713628062" className="contact-link">+254 713 628 062</a>
+              <a href="tel:+254713628062" className="contact-link">
+                +254 713 628 062
+              </a>
             </p>
 
             <p className="contact-item">
               <ion-icon name="mail-outline"></ion-icon>
-              <a href="mailto:kiptumpeter@gmail.com" className="contact-link">kiptumpeter@gmail.com</a>
+              <a href="mailto:kiptumpeter@gmail.com" className="contact-link">
+                kiptumpeter@gmail.com
+              </a>
             </p>
           </div>
         </div>
@@ -101,8 +128,7 @@ const Footer = () => {
           </p>
 
           <ul className="footer-bottom-list">
-            <li><a className="footer-bottom-link">Privacy Policy</a></li>
-            <li><a className="footer-bottom-link">Terms of Use</a></li>
+            
           </ul>
         </div>
       </div>
