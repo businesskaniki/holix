@@ -4,66 +4,75 @@ import Services from "./Services";
 import FeaturesPage from "./FeaturesPage";
 import FAQ from "../components/FAQ";
 import ContactSection from "../components/ContactSection";
-import heroB from "../assets/images/hero-banner.png";
-import pattern from "../assets/images/hero-pattern.svg";
+
+const slides = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80",
+    subtitle: "One Stop Online Services Solution",
+    title: "We Make It Easy for You",
+    text: "Handling government services doesn’t have to be complicated. At Eaglecore Consultants Limited, we take care of your KRA, NTSA, business registration, passport application and visa support.",
+    buttonText: "Discover More",
+    buttonUrl: "#services",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80",
+    subtitle: "Passport & Visa Support",
+    title: "Travel Documentation Simplified",
+    text: "Get fast, accurate passport and visa support with expert guidance and step-by-step service for both local and foreign clients.",
+    buttonText: "Get Started",
+    buttonUrl: "#contact",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80",
+    subtitle: "Business Registration",
+    title: "Launch Your Company Quickly",
+    text: "From business registration to compliance and KRA setup, we help you build a solid foundation for your new enterprise.",
+    buttonText: "Learn More",
+    buttonUrl: "#services",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80",
+    subtitle: "KRA & NTSA Services",
+    title: "Complete Government Support",
+    text: "Whether it’s tax registration or vehicle documentation, we handle the paperwork so you can focus on what matters most.",
+    buttonText: "See Services",
+    buttonUrl: "#services",
+  },
+];
+
 const LandingPage = () => {
   return (
     <>
-    <section className="section hero" id="home" aria-label="hero">
-      <div className="container">
-        <div className="hero-content">
-          <p className="hero-subtitle has-before">
-            One Stop Online Services Solution
-          </p>
-
-          <h1 className="h1 hero-title">We Make It Easy for You</h1>
-
-          <p className="hero-text">
-            Handling government services doesn’t have to be complicated. At
-            Eaglecore Consultants Limited, we take care of your KRA, NTSA,
-            business registration, Passport application and for our foreign
-            clients we help with visa immigration needs — so you can focus on
-            what matters most.
-            <br />
-            Get it done right the first time.
-          </p>
-
-          <div className="btn-group">
-            <a href="#services" className="btn btn-primary">
-              Discover More
-            </a>
-
-            <button className="flex-btn" id="howItWorksBtn">
-              <div className="btn-icon">
-                <ion-icon name="play" aria-hidden="true"></ion-icon>
+    <section className="section hero landing-hero" id="home" aria-label="hero">
+      <div className="hero-carousel">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className="hero-slide"
+            style={{ backgroundImage: `url(${slide.image})` }}
+          >
+            <div className="hero-slide-content">
+              <p className="hero-subtitle has-before">{slide.subtitle}</p>
+              <h1 className="h1 hero-title">{slide.title}</h1>
+              <p className="hero-text">{slide.text}</p>
+              <div className="btn-group">
+                <a href={slide.buttonUrl} className="btn btn-primary">
+                  {slide.buttonText}
+                </a>
+                <button className="flex-btn" type="button">
+                  <div className="btn-icon">
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                  </div>
+                  <span className="span">How it works</span>
+                </button>
               </div>
-
-              <span className="span">How it works</span>
-            </button>
+            </div>
           </div>
-
-          <div className="how-it-works-content" id="howItWorksContent">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-        </div>
-
-        <figure
-          className="hero-banner has-before img-holder"
-          style={{ "--width": 650, "--height": 650 }}
-        >
-          <img
-            src={heroB}
-            width="650"
-            height="650"
-            alt="hero banner"
-            className="img-cover"
-          />
-        </figure>
+        ))}
       </div>
     </section>
     <AboutPage />
