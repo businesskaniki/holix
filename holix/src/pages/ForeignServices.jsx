@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import service1 from "../assets/images/service-1.png";
 import service2 from "../assets/images/service-2.png";
 import service3 from "../assets/images/service-3.png";
@@ -140,6 +140,37 @@ const ForeignServices = () => {
   const [activeSlide, setActiveSlide] = useState(
     foreignServiceSlides[0],
   );
+
+  const foreignSliderRef = useRef(null);
+  const [isForeignSliderPaused, setIsForeignSliderPaused] = useState(false);
+
+  const getForeignScrollDistance = () => {
+    const cardWidth = 260;
+    const gapWidth = 20;
+    if (typeof window === "undefined") return cardWidth + gapWidth;
+    return window.innerWidth >= 1024
+      ? 3 * (cardWidth + gapWidth)
+      : cardWidth + gapWidth;
+  };
+
+  useEffect(() => {
+    const slider = foreignSliderRef.current;
+    if (!slider) return;
+
+    const interval = setInterval(() => {
+      if (isForeignSliderPaused) return;
+
+      const distance = getForeignScrollDistance();
+
+      if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1) {
+        slider.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        slider.scrollBy({ left: distance, behavior: "smooth" });
+      }
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isForeignSliderPaused]);
 
   const scrollToServices = () => {
     const services = document.getElementById('services-section');
@@ -305,12 +336,12 @@ const ForeignServices = () => {
             {/* LEFT ARROW */}
             <button
               onClick={() => {
-                document
-                  .getElementById("foreign-slider")
-                  .scrollBy({
-                    left: -260,
-                    behavior: "smooth",
-                  });
+                const slider = foreignSliderRef.current;
+                if (!slider) return;
+                slider.scrollBy({
+                  left: -getForeignScrollDistance(),
+                  behavior: "smooth",
+                });
               }}
               style={{
                 position: "absolute",
@@ -335,12 +366,12 @@ const ForeignServices = () => {
             {/* RIGHT ARROW */}
             <button
               onClick={() => {
-                document
-                  .getElementById("foreign-slider")
-                  .scrollBy({
-                    left: 260,
-                    behavior: "smooth",
-                  });
+                const slider = foreignSliderRef.current;
+                if (!slider) return;
+                slider.scrollBy({
+                  left: getForeignScrollDistance(),
+                  behavior: "smooth",
+                });
               }}
               style={{
                 position: "absolute",
@@ -365,6 +396,9 @@ const ForeignServices = () => {
             {/* TOP SLIDER */}
             <div
               id="foreign-slider"
+              ref={foreignSliderRef}
+              onMouseEnter={() => setIsForeignSliderPaused(true)}
+              onMouseLeave={() => setIsForeignSliderPaused(false)}
               style={{
                 display: "flex",
                 gap: "20px",
@@ -377,6 +411,7 @@ const ForeignServices = () => {
               {foreignServiceSlides.map((slide) => (
                 <div
                   key={slide.id}
+                  className="slider-card"
                   onClick={() => setActiveSlide(slide)}
                   style={{
                     minWidth: "260px",

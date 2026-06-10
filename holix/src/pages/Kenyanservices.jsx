@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import service1 from "../assets/images/service-1.png";
 import service2 from "../assets/images/service-2.png";
 import service3 from "../assets/images/service-3.png";
@@ -297,6 +297,36 @@ const Kenyanservices = () => {
     eaglecoreKenyaSlides[0],
   );
 
+  const kenyaSliderRef = useRef(null);
+  const [isKenyaSliderPaused, setIsKenyaSliderPaused] = useState(false);
+
+  const getKenyaScrollDistance = (slides = 1) => {
+    const cardWidth = 260;
+    const gapWidth = 20;
+    if (typeof window === "undefined") return cardWidth + gapWidth;
+    const count = window.innerWidth >= 1024 ? slides : 1;
+    return count * (cardWidth + gapWidth);
+  };
+
+  useEffect(() => {
+    const slider = kenyaSliderRef.current;
+    if (!slider) return;
+
+    const interval = setInterval(() => {
+      if (isKenyaSliderPaused) return;
+
+      const distance = getKenyaScrollDistance(1);
+
+      if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1) {
+        slider.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        slider.scrollBy({ left: distance, behavior: "smooth" });
+      }
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isKenyaSliderPaused]);
+
   const scrollToServices = () => {
     const services = document.getElementById('services-section');
     if (!services) return;
@@ -434,11 +464,14 @@ const Kenyanservices = () => {
           <div style={{ position: "relative", marginBottom: "40px" }}>
             {/* LEFT ARROW */}
             <button
-              onClick={() =>
-                document
-                  .getElementById("kenya-slider")
-                  .scrollBy({ left: -260, behavior: "smooth" })
-              }
+              onClick={() => {
+                const slider = kenyaSliderRef.current;
+                if (!slider) return;
+                slider.scrollBy({
+                  left: -getKenyaScrollDistance(3),
+                  behavior: "smooth",
+                });
+              }}
               style={{
                 position: "absolute",
                 left: "-15px",
@@ -461,11 +494,14 @@ const Kenyanservices = () => {
 
             {/* RIGHT ARROW */}
             <button
-              onClick={() =>
-                document
-                  .getElementById("kenya-slider")
-                  .scrollBy({ left: 260, behavior: "smooth" })
-              }
+              onClick={() => {
+                const slider = kenyaSliderRef.current;
+                if (!slider) return;
+                slider.scrollBy({
+                  left: getKenyaScrollDistance(3),
+                  behavior: "smooth",
+                });
+              }}
               style={{
                 position: "absolute",
                 right: "-15px",
@@ -489,6 +525,9 @@ const Kenyanservices = () => {
             {/* SLIDER TRACK (FIXED SIZE CARDS) */}
             <div
               id="kenya-slider"
+              ref={kenyaSliderRef}
+              onMouseEnter={() => setIsKenyaSliderPaused(true)}
+              onMouseLeave={() => setIsKenyaSliderPaused(false)}
               style={{
                 display: "flex",
                 gap: "20px",
@@ -501,6 +540,7 @@ const Kenyanservices = () => {
               {eaglecoreKenyaSlides.map((slide) => (
                 <div
                   key={slide.id}
+                  className="slider-card"
                   onClick={() => setActiveKenyaSlide(slide)}
                   style={{
                     minWidth: "260px", // ✅ FIXED (Foreign style)

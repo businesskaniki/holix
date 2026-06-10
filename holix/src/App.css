@@ -1871,6 +1871,21 @@ body {
 
   .faq-card .card-action.active + .card-content { max-height: 200px; }
 
+  /* slider card responsive mobile width */
+  #kenya-slider .slider-card,
+  #foreign-slider .slider-card {
+    min-width: 260px;
+    width: auto;
+  }
+
+  @media (max-width: 767px) {
+    #kenya-slider .slider-card,
+    #foreign-slider .slider-card {
+      min-width: calc(100% - 20px);
+      width: calc(100% - 20px);
+    }
+  }
+
 }
 
 

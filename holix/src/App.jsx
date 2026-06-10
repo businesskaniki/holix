@@ -7,6 +7,7 @@ import LandingPage from "./pages/LandingPage";
 import Footer from "./components/Footer";
 import Kenyanservices from "./pages/Kenyanservices";
 import ForeignServices from "./pages/ForeignServices";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" Component={LandingPage} />
             <Route path="/kenyan-services" Component={Kenyanservices} />
             <Route path="/international-services" Component={ForeignServices} />
+            <Route path="*" Component={NotFoundPage} />
           </Routes>
         </article>
       </main>
