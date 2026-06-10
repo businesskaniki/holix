@@ -141,63 +141,126 @@ const ForeignServices = () => {
     foreignServiceSlides[0],
   );
 
+  const scrollToServices = () => {
+    const services = document.getElementById('services-section');
+    if (!services) return;
+    const top = services.getBoundingClientRect().top + window.pageYOffset - 8;
+    window.scrollTo({ top, behavior: 'smooth' });
+  };
+
   return (
     <>
       {/* HERO */}
       <section
-        className="section hero"
+        className="section hero hero-bg"
         aria-label="International services"
         style={{
-          minHeight: "70vh",
+          minHeight: "100vh",
+          height: "100vh",
           display: "flex",
           alignItems: "center",
+          backgroundImage: "url(\"https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80\")",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="container">
           <div className="hero-content">
-            <p className="hero-subtitle has-before">
-              International Visa & Immigration Support
-            </p>
+            <div className="hero-slide-wrapper" aria-live="polite">
+              <article
+                className="hero-slide-card"
+                role="button"
+                tabIndex={0}
+                onClick={scrollToServices}
+                onKeyDown={(e) => { if (e.key === 'Enter') scrollToServices(); }}
+              >
+                <p className="hero-subtitle has-before">
+                  International Visa & Immigration Support
+                </p>
+                <h1 className="h1 hero-title">
+                  Global Visa Applications and Immigration Services
+                </h1>
+                <p className="hero-text">
+                  EagleCore supports visa applications, work permits,
+                  ETA processing, foreign passes and immigration documents.
+                </p>
+              </article>
 
-            <h1 className="h1 hero-title">
-              Global Visa Applications and Immigration Services
-            </h1>
+              <article
+                className="hero-slide-card"
+                role="button"
+                tabIndex={0}
+                onClick={scrollToServices}
+                onKeyDown={(e) => { if (e.key === 'Enter') scrollToServices(); }}
+              >
+                <p className="hero-subtitle has-before">
+                  Work Permit & Residency Guidance
+                </p>
+                <h1 className="h1 hero-title">
+                  Smooth legal entry and stay for employees and families
+                </h1>
+                <p className="hero-text">
+                  We help prepare applications, track approvals and keep
+                  your international travel plans on schedule.
+                </p>
+              </article>
 
-            <p className="hero-text">
-              EagleCore supports visa applications, work permits,
-              ETA processing, foreign passes and international
-              immigration documentation for individuals and businesses.
-            </p>
+              <article
+                className="hero-slide-card"
+                role="button"
+                tabIndex={0}
+                onClick={scrollToServices}
+                onKeyDown={(e) => { if (e.key === 'Enter') scrollToServices(); }}
+              >
+                <p className="hero-subtitle has-before">
+                  Visa Processing for Multiple Destinations
+                </p>
+                <h1 className="h1 hero-title">
+                  USA, Canada, Schengen, UAE and global visas made easier
+                </h1>
+                <p className="hero-text">
+                  Our team manages submission requirements, embassy
+                  appointments and follow up for your chosen destination.
+                </p>
+              </article>
+
+              <article
+                className="hero-slide-card"
+                role="button"
+                tabIndex={0}
+                onClick={scrollToServices}
+                onKeyDown={(e) => { if (e.key === 'Enter') scrollToServices(); }}
+              >
+                <p className="hero-subtitle has-before">
+                  Fast Immigration Document Support
+                </p>
+                <h1 className="h1 hero-title">
+                  From application to approval with personal follow-up
+                </h1>
+                <p className="hero-text">
+                  Count on us for clear guidance, document checks and
+                  reliable communication at every step.
+                </p>
+              </article>
+            </div>
 
             <div className="btn-group">
               <a
-                href="https://wa.me/2547XXXXXXXX?text=Hi%20EagleCore%2C%20I%20need%20international%20services"
+                href="#"
+                onClick={(e) => { e.preventDefault(); scrollToServices(); }}
                 className="btn btn-primary"
-                target="_blank"
-                rel="noreferrer"
               >
-                Contact Us
+                Learn More
               </a>
             </div>
           </div>
-
-          <figure
-            className="hero-banner has-before img-holder"
-            style={{ "--width": 600, "--height": 600 }}
-          >
-            <img
-              src="./assets/images/hero-banner.png"
-              width="600"
-              height="600"
-              alt="international visa services"
-              className="img-cover"
-            />
-          </figure>
         </div>
       </section>
 
       {/* SERVICES SECTION */}
       <section
+        id="services-section"
         style={{
           paddingBlock: "var(--section-padding)",
           background: "var(--mint-cream)",

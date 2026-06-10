@@ -297,64 +297,127 @@ const Kenyanservices = () => {
     eaglecoreKenyaSlides[0],
   );
 
+  const scrollToServices = () => {
+    const services = document.getElementById('services-section');
+    if (!services) return;
+    const top = services.getBoundingClientRect().top + window.pageYOffset - 8;
+    window.scrollTo({ top, behavior: 'smooth' });
+  };
+
   return (
     <>
-      {/* HERO (UNCHANGED) */}
+      {/* HERO */}
       <section
-        className="section hero"
+        className="section hero hero-bg"
         id="home"
         aria-label="Kenyan services"
         style={{
-          minHeight: "70vh",
+          minHeight: "100vh",
+          height: "100vh",
           display: "flex",
           alignItems: "center",
+          backgroundImage: "url(\"https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1600&q=80\")",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="container">
           <div className="hero-content">
-            <p className="hero-subtitle has-before">
-              Kenyan Government & Business Services
-            </p>
+            <div className="hero-slide-wrapper" aria-live="polite">
+              <article
+                className="hero-slide-card"
+                role="button"
+                tabIndex={0}
+                onClick={scrollToServices}
+                onKeyDown={(e) => { if (e.key === 'Enter') scrollToServices(); }}
+              >
+                <p className="hero-subtitle has-before">
+                  Kenyan Government & Business Services
+                </p>
+                <h1 className="h1 hero-title">
+                  Local NTSA, KRA, BRS and Passport Support
+                </h1>
+                <p className="hero-text">
+                  EagleCore helps Kenyan individuals and businesses with fast,
+                  reliable government services.
+                </p>
+              </article>
 
-            <h1 className="h1 hero-title">
-              Local NTSA, KRA, BRS and Passport Support
-            </h1>
+              <article
+                className="hero-slide-card"
+                role="button"
+                tabIndex={0}
+                onClick={scrollToServices}
+                onKeyDown={(e) => { if (e.key === 'Enter') scrollToServices(); }}
+              >
+                <p className="hero-subtitle has-before">
+                  Fast Government Filing for Kenyan Businesses
+                </p>
+                <h1 className="h1 hero-title">
+                  Company registration, compliance, and document renewal
+                </h1>
+                <p className="hero-text">
+                  We handle KRA PINs, business registration, and government
+                  approvals so you can stay focused on growth.
+                </p>
+              </article>
 
-            <p className="hero-text">
-              EagleCore helps Kenyan individuals and businesses with fast,
-              reliable government services.
-            </p>
+              <article
+                className="hero-slide-card"
+                role="button"
+                tabIndex={0}
+                onClick={scrollToServices}
+                onKeyDown={(e) => { if (e.key === 'Enter') scrollToServices(); }}
+              >
+                <p className="hero-subtitle has-before">
+                  Passport & Civil Certificate Support
+                </p>
+                <h1 className="h1 hero-title">
+                  Passport renewal, certificates, and identity services
+                </h1>
+                <p className="hero-text">
+                  Complete passport, birth, marriage and good-conduct support for
+                  individuals and families.
+                </p>
+              </article>
+
+              <article
+                className="hero-slide-card"
+                role="button"
+                tabIndex={0}
+                onClick={scrollToServices}
+                onKeyDown={(e) => { if (e.key === 'Enter') scrollToServices(); }}
+              >
+                <p className="hero-subtitle has-before">
+                  Trusted Local Service Delivery
+                </p>
+                <h1 className="h1 hero-title">
+                  On-time government approvals with personal service
+                </h1>
+                <p className="hero-text">
+                  We provide fast turnarounds, expert guidance and clear next
+                  steps for every Kenyan service request.
+                </p>
+              </article>
+            </div>
 
             <div className="btn-group">
               <a
-                href="https://wa.me/2547XXXXXXXX"
+                href="#"
+                onClick={(e) => { e.preventDefault(); scrollToServices(); }}
                 className="btn btn-primary"
-                target="_blank"
-                rel="noreferrer"
               >
-                Contact Us
+                Learn More
               </a>
             </div>
           </div>
-
-          {/* HERO IMAGE (RESTORED) */}
-          <figure
-            className="hero-banner has-before img-holder"
-            style={{ "--width": 600, "--height": 600 }}
-          >
-            <img
-              src="./assets/images/passport-image.png"
-              width="600"
-              height="600"
-              alt="Kenyan government services"
-              className="img-cover"
-            />
-          </figure>
         </div>
       </section>
 
       {/* SERVICES */}
       <section
+        id="services-section"
         style={{
           paddingBlock: "var(--section-padding)",
           background: "var(--mint-cream)",
