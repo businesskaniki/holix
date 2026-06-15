@@ -23,53 +23,64 @@ const ForeignServices = () => {
 
       sections: [
         {
-          heading: "Permit Classes",
+          heading: "Work Permit Services",
 
           items: [
-            "Class A - Prospecting and mining activities",
-            "Class B - Agriculture and animal husbandry",
-            "Class C - Prescribed profession practice",
-            "Class D - Specific employment by approved employer",
-            "Class F - Specific manufacturing in Kenya",
-            "Class G - Trade, consultancy and business operations",
-            "Class I - Religious and missionary activities",
-            "Class K - Ordinary residents with assured income",
-            "Class M - Refugees seeking employment",
-            "Class N - Digital nomad permits",
-            "Class P - UN, diplomatic and NGO staff",
-            "Class Q - Religious and charitable organizations",
-            "Class R - East African Community nationals",
-            "Exemption permits and special exemptions",
+            "Work permits application support",
+            "Employer sponsorship coordination",
+            "Renewals, compliance and follow-up",
           ],
         },
       ],
     },
 
     {
-      id: "kenya-passes",
+      id: "student-pass",
 
-      title: "Passes",
+      title: "Student Pass",
 
       shortDescription:
-        "Special passes, dependant passes, student passes and internship authorization for foreigners in Kenya.",
+        "Student pass application and renewal support for foreign nationals enrolled in Kenyan institutions.",
 
       description:
-        "Support for temporary entry permissions, dependant processing, foreign student documentation and internship approvals.",
+        "Guidance for students on pass applications, renewals and immigration compliance while studying in Kenya.",
 
       image: aboutBanner,
 
       sections: [
         {
-          heading: "Pass Categories",
+          heading: "Student Pass Services",
 
           items: [
-            "Special Pass for temporary business visits",
-            "Dependant Pass for spouses and dependants",
-            "Student Pass for foreign students",
-            "Internship Pass processing",
-            "Research Pass applications",
-            "Pass renewals and extensions",
-            "Document preparation and immigration support",
+            "Student Pass application support",
+            "Renewals and extensions",
+            "Documentation guidance",
+          ],
+        },
+      ],
+    },
+
+    {
+      id: "special-pass",
+
+      title: "Special Pass",
+
+      shortDescription:
+        "Special pass support for temporary business, visit or employment stays in Kenya.",
+
+      description:
+        "Assistance with special pass applications for short-term entry, business visits and temporary stays.",
+
+      image: service1,
+
+      sections: [
+        {
+          heading: "Special Pass Services",
+
+          items: [
+            "Temporary business and visit passes",
+            "Special pass application processing",
+            "Short-term stay extensions",
           ],
         },
       ],
@@ -78,13 +89,13 @@ const ForeignServices = () => {
     {
       id: "eta-services",
 
-      title: "ETA Applications",
+      title: "ETA (Electronic Travel Authorization)",
 
       shortDescription:
-        "Kenya Electronic Travel Authorization applications for tourists, transit visitors and business travellers.",
+        "Electronic Travel Authorization support for tourists, transit visitors and business travellers.",
 
       description:
-        "Application assistance for Kenya ETA approvals including transit, standard and multiple-entry authorizations.",
+        "Guidance and processing for Kenya ETA approvals, including transit, standard and multiple-entry authorizations.",
 
       image: service4,
 
@@ -93,44 +104,87 @@ const ForeignServices = () => {
           heading: "ETA Services",
 
           items: [
-            "Transit ETA application",
-            "Standard ETA processing",
-            "One-year multiple entry ETA",
-            "Five-year ETA for US nationals",
-            "Expedited ETA processing",
-            "Travel document verification",
-            "International travel guidance",
+            "ETA application support",
+            "Transit and tourist ETA processing",
+            "Fast approvals and renewals",
           ],
         },
       ],
     },
 
     {
-      id: "visa-support",
+      id: "fnm-extensions",
 
-      title: "Visa Support",
+      title: "FNM (extension & endorsements)",
 
       shortDescription:
-        "International visa processing support for global destinations and embassy documentation assistance.",
+        "Foreign national movement extension and endorsement processing for Kenya stays.",
 
       description:
-        "Visa consultation and application support for tourism, business travel, studies and international relocation.",
+        "Support for FNM extensions, endorsements and related immigration updates to keep your status valid.",
+
+      image: service2,
+
+      sections: [
+        {
+          heading: "FNM Services",
+
+          items: [
+            "Extension applications",
+            "Endorsement processing",
+            "Status and travel updates",
+          ],
+        },
+      ],
+    },
+
+    {
+      id: "citizenship-services",
+
+      title: "Citizenship Services",
+
+      shortDescription:
+        "Assistance with Kenyan citizenship applications, naturalization and dual nationality guidance.",
+
+      description:
+        "Guidance for foreign nationals seeking citizenship, registration and compliance with Kenyan immigration law.",
 
       image: heroBanner,
 
       sections: [
         {
-          heading: "Countries Supported",
+          heading: "Citizenship Services",
 
           items: [
-            "USA Visa Applications",
-            "Canada Visa Applications",
-            "Schengen Visa Applications",
-            "Australia Visa Applications",
-            "Mexico Visa Applications",
-            "Document preparation support",
-            "Embassy appointment guidance",
-            "Travel history and interview preparation",
+            "Citizenship application support",
+            "Dual nationality guidance",
+            "Documentation review",
+          ],
+        },
+      ],
+    },
+
+    {
+      id: "permanent-residence",
+
+      title: "Permanent Residence",
+
+      shortDescription:
+        "Permanent residence application support for foreign nationals seeking long-term stay in Kenya.",
+
+      description:
+        "Assistance with permanent residence applications, renewals and residency documentation.",
+
+      image: aboutBanner,
+
+      sections: [
+        {
+          heading: "Permanent Residence Services",
+
+          items: [
+            "Permanent residence application support",
+            "Renewals and documentation",
+            "Long-term stay compliance",
           ],
         },
       ],
@@ -683,6 +737,7 @@ const ForeignServices = () => {
               </div>
             ))}
           </div>
+
         </div>
       </section>
     </>
