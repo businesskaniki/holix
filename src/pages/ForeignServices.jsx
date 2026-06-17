@@ -23,38 +23,32 @@ const ForeignServices = () => {
 
       sections: [
         {
+          heading: "Work Permit Classes",
+
+          items: [
+            "Class A: Prospecting and mining",
+            "Class B: Agriculture and Animal husbandry",
+            "Class C: Prescribed profession",
+            "Class D: Employment",
+            "Class F: Specific manufacturing",
+            "Class G: Specific trade, business or consultancy",
+            "Class I: Approved religious activities (Non-EAC Nationals)",
+            "Class K: Ordinary residents",
+            "Class M: Refugees",
+            "Class N: Digital Nomad",
+            "Class P: Staff of UN, Diplomatic Missions, IGOs, and INGOs",
+            "Class Q: Professionals working for religious or charitable organizations",
+            "Class R: East African Community (EAC) Nationals",
+            "Exemption: Cabinet secretary exempted persons",
+          ],
+        },
+        {
           heading: "Work Permit Services",
 
           items: [
             "Work permits application support",
             "Employer sponsorship coordination",
             "Renewals, compliance and follow-up",
-          ],
-        },
-      ],
-    },
-
-    {
-      id: "student-pass",
-
-      title: "Student Pass",
-
-      shortDescription:
-        "Student pass application and renewal support for foreign nationals enrolled in Kenyan institutions.",
-
-      description:
-        "Guidance for students on pass applications, renewals and immigration compliance while studying in Kenya.",
-
-      image: aboutBanner,
-
-      sections: [
-        {
-          heading: "Student Pass Services",
-
-          items: [
-            "Student Pass application support",
-            "Renewals and extensions",
-            "Documentation guidance",
           ],
         },
       ],
@@ -69,18 +63,66 @@ const ForeignServices = () => {
         "Special pass support for temporary business, visit or employment stays in Kenya.",
 
       description:
-        "Assistance with special pass applications for short-term entry, business visits and temporary stays.",
+        "This is a document issued under Regulation 34 of the Kenya Citizenship and Immigration Regulations, 2012, to person(s) who wishes to enter or remain in Kenya for a limited period for purposes of temporarily conducting a business, trade or profession.",
 
       image: service1,
 
       sections: [
         {
+          heading: "Special Pass Details",
+
+          items: [
+            "Limited period for temporary business, trade or profession",
+            "Fee: Non-East Africans – 200 US Dollars per month upon approval",
+            "Fee: East Africa Community Member States – Gratis",
+            "Documents in foreign languages must be translated into English by Embassy, Public Notary, or authorized/recognized institution",
+            "View Requirements CheckList available",
+          ],
+        },
+        {
           heading: "Special Pass Services",
 
           items: [
-            "Temporary business and visit passes",
-            "Special pass application processing",
+            "Special pass application support",
+            "Business and trade authorization processing",
             "Short-term stay extensions",
+          ],
+        },
+      ],
+    },
+
+    {
+      id: "student-pass",
+
+      title: "Student Pass",
+
+      shortDescription:
+        "Student pass application and renewal support for foreign nationals enrolled in Kenyan institutions.",
+
+      description:
+        "This is a document issued to applicants (foreign students) under section 30(1) of the Kenya Citizenship and Immigration Regulations 2012, who wish to pursue their education in Kenya's Education or Training Institutions where they have been accepted or admitted.",
+
+      image: aboutBanner,
+
+      sections: [
+        {
+          heading: "Student Pass Details",
+
+          items: [
+            "For education in approved Educational or Training Institutions",
+            "Applicant must be accepted by an approved Educational or Training Establishment",
+            "Fee: Non-East Africans – 100 US Dollar per year",
+            "Fee: East Africa Community Member States – Gratis",
+            "View Requirements CheckList available",
+          ],
+        },
+        {
+          heading: "Student Pass Services",
+
+          items: [
+            "Student Pass application support",
+            "Renewals and extensions",
+            "Documentation guidance",
           ],
         },
       ],
@@ -100,6 +142,27 @@ const ForeignServices = () => {
       image: service4,
 
       sections: [
+        {
+          heading: "Normal ETA",
+
+          items: [
+            "Transit Application: For travellers on a transit flight through Kenya – Fee: $20",
+            "Standard Application: Allows entry into Kenya once – Fee: $30",
+            "One Year Application: Allows for multiple entries for a period of one year – Fee: $300",
+            "Five Year Application: For American nationals visiting for multiple times over five years – Fee: $185",
+            "East African Tourist ETA: Allows entry into Kenya, Uganda, and Rwanda for 90 days – Fee: $100",
+          ],
+        },
+        {
+          heading: "Expedited ETA",
+
+          items: [
+            "Transit Application: For travellers on a transit flight through Kenya – Fee: $120",
+            "Standard Application: Allows entry into Kenya once – Fee: $130",
+            "One Year Application: Allows for multiple entries for a period of one year – Fee: $400",
+            "Five Year Application: For American nationals visiting for multiple times over five years – Fee: $285",
+          ],
+        },
         {
           heading: "ETA Services",
 
@@ -127,12 +190,37 @@ const ForeignServices = () => {
 
       sections: [
         {
-          heading: "FNM Services",
+          heading: "Foreign Nationals Certificate (Alien Card)",
 
           items: [
-            "Extension applications",
-            "Endorsement processing",
-            "Status and travel updates",
+            "All foreigners residing in Kenya over 90 days must be registered",
+            "Issuance of Foreign Nationals Certificate (Alien Card)",
+            "View Requirements CheckList available",
+          ],
+        },
+        {
+          heading: "Re-entry Pass & Endorsement",
+
+          items: [
+            "Re-entry Pass processing and endorsement for dependant pass holders",
+            "View Requirements CheckList available",
+          ],
+        },
+        {
+          heading: "Visitor's Pass Extension",
+
+          items: [
+            "Visitor's pass may be extended to a maximum of 6 months",
+            "Fee: $50",
+            "View Requirements CheckList available",
+          ],
+        },
+        {
+          heading: "Permit & Pass Endorsements",
+
+          items: [
+            "Endorsement of permits and passes with passport stamp transfers",
+            "Application and processing fee: Free/Gratis",
           ],
         },
       ],
@@ -144,21 +232,114 @@ const ForeignServices = () => {
       title: "Citizenship Services",
 
       shortDescription:
-        "Assistance with Kenyan citizenship applications, naturalization and dual nationality guidance.",
+        "Assistance with Kenyan citizenship applications, naturalization, and dual citizenship matters.",
 
       description:
-        "Guidance for foreign nationals seeking citizenship, registration and compliance with Kenyan immigration law.",
+        "Guidance for foreign nationals and Kenyan citizens seeking citizenship registration, dual citizenship declaration, endorsements, renunciation, and other citizenship services.",
 
       image: heroBanner,
 
       sections: [
         {
-          heading: "Citizenship Services",
+          heading: "Regaining Citizenship – Form 1",
 
           items: [
-            "Citizenship application support",
-            "Dual nationality guidance",
-            "Documentation review",
+            "Eligible for citizens of Kenya by birth who ceased to be citizens by acquiring another citizenship before the 2010 Constitution",
+            "Application Fee: Ksh.20,000",
+            "Issuance Fee: Ksh.50,000",
+          ],
+        },
+        {
+          heading: "Declaration of Dual Citizenship – Form 3",
+
+          items: [
+            "Kenyans who have acquired other citizenships must declare dual citizenship by law",
+            "Application Fee: Ksh.20,000",
+            "Issuance Fee: Kshs.10,000",
+          ],
+        },
+        {
+          heading: "Endorsement – Form 4",
+
+          items: [
+            "Application by a dual citizen for endorsement on a non-Kenyan passport",
+            "Application Fee: Ksh.20,000",
+            "Issuance Fee: Kshs.750,000",
+          ],
+        },
+        {
+          heading: "Renunciation – Form 6",
+
+          items: [
+            "For Kenya citizens voluntarily declaring renunciation of Kenyan citizenship",
+            "Application Fee: Ksh.20,000",
+            "Issuance Fee: Kshs.50,000",
+          ],
+        },
+        {
+          heading: "Citizenship by Marriage – Form 8",
+
+          items: [
+            "A foreigner married to a Kenyan citizen for at least 7 years is eligible for registration",
+            "Application Fee: Ksh.20,000",
+            "Issuance Fee for East Africans: Kshs.50,000",
+            "Issuance Fee for Non-East Africans: Kshs.100,000",
+          ],
+        },
+        {
+          heading: "Widows and Widowers – Form 9",
+
+          items: [
+            "A foreign national married to a Kenyan citizen for over 7 years may register after the death of the Kenyan spouse",
+            "Application Fee: Ksh.20,000",
+            "Issuance Fee for East Africans: Kshs.20,000",
+            "Issuance Fee for Non-East Africans: Kshs.50,000",
+          ],
+        },
+        {
+          heading: "Lawful Residents – Form 10",
+
+          items: [
+            "Foreign nationals who have been lawful residents in Kenya for at least 7 continuous years",
+            "Application Fee: Ksh.20,000",
+            "Issuance Fee: Kshs.1,000,000",
+          ],
+        },
+        {
+          heading: "Children and Dependants – Form 11",
+
+          items: [
+            "Children born before the parent acquired Kenyan citizenship or dependants of registered Kenyan citizens",
+            "Children adopted by Kenyan citizens may be registered",
+            "Application Fee: Ksh.20,000",
+            "Issuance Fee: Kshs.100,000",
+          ],
+        },
+        {
+          heading: "Stateless Persons – Form 13",
+
+          items: [
+            "Persons without enforceable claim to any state citizenship who have lived lawfully in Kenya since 12 December 1963",
+            "Application Fee: Ksh.20,000",
+            "Issuance Fee: Kshs.10,000",
+          ],
+        },
+        {
+          heading: "Migrants – Form 14",
+
+          items: [
+            "Persons who migrated into Kenya before 12 December 1963 and have lived continuously in Kenya",
+            "Application Fee: Ksh.20,000",
+            "Issuance Fee: Kshs.10,000",
+          ],
+        },
+        {
+          heading: "Descendants of Stateless Persons and Migrants – Form 15",
+
+          items: [
+            "Persons aged 18+ whose parents were eligible stateless persons or migrants",
+            "Application Fee: Ksh.20,000",
+            "Issuance Fee: Kshs.10,000",
           ],
         },
       ],
@@ -178,6 +359,42 @@ const ForeignServices = () => {
       image: aboutBanner,
 
       sections: [
+        {
+          heading: "Ex-Kenyan (Category A)",
+
+          items: [
+            "For Kenyan citizens by birth who renounced citizenship and whose domicile country denies dual citizenship",
+            "Processing Fee: Ksh.50,000 (Non-refundable)",
+            "Issuance Fee: Ksh.100,000",
+          ],
+        },
+        {
+          heading: "Lawful Residents (Category B)",
+
+          items: [
+            "For lawful residents with work permits for at least 7 years and 3 years continuous residence before application",
+            "Processing Fee: Ksh.50,000 (Non-refundable)",
+            "Requisite Fee: Kshs.750,000",
+          ],
+        },
+        {
+          heading: "Children of Kenya Citizens (Category C)",
+
+          items: [
+            "For children born to Kenyan parents holding another nationality that forbids dual citizenship or born before the parent acquired Kenyan citizenship",
+            "Processing Fee: Ksh.20,000 (Non-refundable)",
+            "Requisite Fee: Kshs.750,000",
+          ],
+        },
+        {
+          heading: "Spouse to Kenya Citizen (Category D)",
+
+          items: [
+            "For spouses married to Kenyan citizens for over 3 years in a bona fide marriage",
+            "Processing Fee: Ksh.50,000 (Non-refundable)",
+            "Requisite Fee: Kshs.150,000",
+          ],
+        },
         {
           heading: "Permanent Residence Services",
 
