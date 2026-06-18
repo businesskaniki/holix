@@ -448,7 +448,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background: var(--rich-black-fogra-29-1);
+  background: white;
   width: 240px;
   padding: 10px 10px;
   border-radius: var(--radius-5);
@@ -464,6 +464,7 @@ body {
 
 .dropdown li {
   padding: 0;
+  color:  white;
 }
 
 .dropdown-header {
