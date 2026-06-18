@@ -42,87 +42,63 @@ const ForeignServices = () => {
             "Exemption: Cabinet secretary exempted persons — This permit is issued to any person or class of persons exempted by the cabinet secretary from obtaining a work permit by notice in the gazette under section 34(3)(g) of the Kenya Citizenship and Immigration Act, 2011.",
           ],
         },
-        {
-          heading: "Work Permit Services",
-
-          items: [
-            "Work permits application support",
-            "Employer sponsorship coordination",
-            "Renewals, compliance and follow-up",
-          ],
-        },
       ],
     },
 
     {
-      id: "special-pass",
+      id: "passes",
 
-      title: "Special Pass",
+      title: "Passes",
 
       shortDescription:
-        "Special pass support for temporary business, visit or employment stays in Kenya.",
+        "There are three (3) main types of passes issued in Kenya",
 
       description:
-        "This is a document issued under Regulation 34 of the Kenya Citizenship and Immigration Regulations, 2012, to person(s) who wishes to enter or remain in Kenya for a limited period for purposes of temporarily conducting a business, trade or profession.",
+        "There are three (3) main types of passes issued in Kenya i.e special pass, dependant pass and Student/Research/Internship pass. These are specified under Section 26 of the Kenya Citizenship and Immigration Regulations, 2012.",
 
       image: service1,
 
       sections: [
         {
-          heading: "Special Pass Details",
+          heading: "Special Pass",
 
           items: [
-            "Limited period for temporary business, trade or profession",
-            "Fee: Non-East Africans – 200 US Dollars per month upon approval",
-            "Fee: East Africa Community Member States – Gratis",
-            "Documents in foreign languages must be translated into English by Embassy, Public Notary, or authorized/recognized institution",
-            "View Requirements CheckList available",
+            `Special Pass: This is a document issued to person(s) who wishes to enter or remain in Kenya — This is a document issued under Regulation 34 of the Kenya Citizenship and Immigration Regulations, 2012, to person(s) who wishes to enter or remain in Kenya for a limited period for purposes of temporarily conducting a business, trade or profession.
+             NB: Documents in foreign languages should be translated into English by either the Embassy, Public Notary, or authorized /recognized institution
+            Fee: Non-East Africans – 200 US Dollars per month upon approval
+            East Africa Community Member States – Grati`,
           ],
         },
         {
-          heading: "Special Pass Services",
+          heading: "Dependant Pass",
 
           items: [
-            "Special pass application support",
-            "Business and trade authorization processing",
-            "Short-term stay extensions",
-          ],
-        },
-      ],
-    },
+            `dependant pass: This is a document issued to a person whose spouse, parent or guardian is lawfully entitled to enter Kenya — Dependant's pass for spouse and children of a Kenyan citizen
+              Issuance fee: Ksh 20,000
 
-    {
-      id: "student-pass",
+            • Dependant's pass for spouse and children of work permit and permanent resident holders
+              Issuance fee: Ksh 10,000
 
-      title: "Student Pass",
-
-      shortDescription:
-        "Student pass application and renewal support for foreign nationals enrolled in Kenyan institutions.",
-
-      description:
-        "This is a document issued to applicants (foreign students) under section 30(1) of the Kenya Citizenship and Immigration Regulations 2012, who wish to pursue their education in Kenya's Education or Training Institutions where they have been accepted or admitted.",
-
-      image: aboutBanner,
-
-      sections: [
-        {
-          heading: "Student Pass Details",
-
-          items: [
-            "For education in approved Educational or Training Institutions",
-            "Applicant must be accepted by an approved Educational or Training Establishment",
-            "Fee: Non-East Africans – 100 US Dollar per year",
-            "Fee: East Africa Community Member States – Gratis",
-            "View Requirements CheckList available",
+            • East Africa Community States
+              Gratis`,
           ],
         },
         {
-          heading: "Student Pass Services",
+          heading: "Student Pass",
 
           items: [
-            "Student Pass application support",
-            "Renewals and extensions",
-            "Documentation guidance",
+            `Student Pass: This is a document issued to applicants who wish to purse their education in Kenya —  This is a document issued to applicants (foreign students) (section 30(1) of the Kenya Citizenship and Immigration Regulations 2012, who wish to purse their education in Kenya's Education or Training Institutions where they have been accepted or admitted. The applicant (foreign student) must be accepted as a student by an approved Educational or Training Establishment.
+             Fee: Non-East Africans – : 100 US Dollar per year
+             East Africa Community Member States – Gratis `,
+          ],
+        },
+        {
+          heading: "Internship/Research Pass",
+
+          items: [
+            `Internship/Research Pass: Authorization issued to a person seeking to —   Authorization issued to a person seeking to enter and remain in Kenya for the purpose of undertaking internship or academic research within Kenya and should be accepted by institution.
+            Fee: Non-East Africans –Kshs. 15,000 per year
+            East Africa Community Member States – Gratis  `,
           ],
         },
       ],
@@ -136,40 +112,34 @@ const ForeignServices = () => {
       shortDescription:
         "Electronic Travel Authorization support for tourists, transit visitors and business travellers.",
 
-      description:
-        "Guidance and processing for Kenya ETA approvals, including transit, standard and multiple-entry authorizations.",
+      description: `Kenya eTA is a semi-automated system that determines the eligibility of visitors to travel to Kenya. An eTA offers permission to travel and is authorised by the Government of the Republic of Kenya. The possession of an eTA is not the final authority to enter the Republic of Kenya. Admissibility will be determined at the point of entry.
+The eTA application collects biographic information and answers to eligibility questions from the traveller. eTA applications for Kenya are usually processed in 3 days and there is an urgent processing service, however, it is recommended applications be submitted at least 2 weeks prior to travel to ensure adequate time for processing. `,
 
       image: service4,
 
       sections: [
         {
-          heading: "Normal ETA",
+          heading: "Electronic Travel Authorization (ETA)",
 
           items: [
-            "Transit Application: For travellers on a transit flight through Kenya – Fee: $20",
-            "Standard Application: Allows entry into Kenya once – Fee: $30",
-            "One Year Application: Allows for multiple entries for a period of one year – Fee: $300",
-            "Five Year Application: For American nationals visiting for multiple times over five years – Fee: $185",
-            "East African Tourist ETA: Allows entry into Kenya, Uganda, and Rwanda for 90 days – Fee: $100",
-          ],
-        },
-        {
-          heading: "Expedited ETA",
-
-          items: [
-            "Transit Application: For travellers on a transit flight through Kenya – Fee: $120",
-            "Standard Application: Allows entry into Kenya once – Fee: $130",
-            "One Year Application: Allows for multiple entries for a period of one year – Fee: $400",
-            "Five Year Application: For American nationals visiting for multiple times over five years – Fee: $285",
-          ],
-        },
-        {
-          heading: "ETA Services",
-
-          items: [
-            "ETA application support",
-            "Transit and tourist ETA processing",
-            "Fast approvals and renewals",
+            `Normal ETA: The first type of ETA —  Transit Application : For travellers who are on a transit flight through Kenya
+Fee : $20
+Standard Application : Allows entry into Kenya once
+Fee : $30
+One Year Application : Allows for multiple entries into the country for a period of one year
+Fee : $300
+Five Year Application : For American nationals visiting the country for multiple times for five years
+Fee : $185
+East African Tourist ETA : Allows entry into Kenya, Uganda, and Rwanda. Valid for 90 days after approval.
+Fee : $100 `,
+            `Expedited ETA: The Second type of ETA —   Transit Application : For travellers who are on a transit flight through Kenya
+Fee : $120
+Standard Application : Allows entry into Kenya once
+Fee : $130
+One Year Application : Allows for multiple entries into the country for a period of one year
+Fee : $400
+Five Year Application : For American nationals visiting the country for multiple times for five years
+Fee : $285 `,
           ],
         },
       ],
@@ -193,40 +163,19 @@ const ForeignServices = () => {
           heading: "Foreign Nationals Certificate (Alien Card)",
 
           items: [
-            "All foreigners residing in Kenya over 90 days must be registered",
-            "Issuance of Foreign Nationals Certificate (Alien Card)",
-            "View Requirements CheckList available",
-          ],
-        },
-        {
-          heading: "Re-entry Pass & Endorsement",
+            `Alien Card: Issuance of Foreign Nationals Certificate —  The law requires that all foreigners residing within Kenya for a period exceeding 90 days be registered. `,
+            `Re-entry Pass processing and endorsement: Re-entry Pass processing and endorsement —   Re-entry passes are issued to holders of dependant passes. `,
+            `Extension of Visitor’s Pass: Extension of Visitor’s Pass  —  Visitors passes are issued at the point of Entry/exit (POE) to foreigners visiting Kenya. A foreign national may extend a visitors pass to a maximum of 6 months upon application in the prescribed manner.
+Fee : $50 `,
+            `Endorsement of Permits and passes: Endorsement of Permits and passes —   This service entails stamping on the physical passport details of an issued residency document/status. This includes transfer of stamps from expired/cancelled passport to new passport.
 
-          items: [
-            "Re-entry Pass processing and endorsement for dependant pass holders",
-            "View Requirements CheckList available",
-          ],
-        },
-        {
-          heading: "Visitor's Pass Extension",
-
-          items: [
-            "Visitor's pass may be extended to a maximum of 6 months",
-            "Fee: $50",
-            "View Requirements CheckList available",
-          ],
-        },
-        {
-          heading: "Permit & Pass Endorsements",
-
-          items: [
-            "Endorsement of permits and passes with passport stamp transfers",
-            "Application and processing fee: Free/Gratis",
+Application and processing fee : Free Gratis`,
           ],
         },
       ],
     },
 
-    {
+   {
       id: "citizenship-services",
 
       title: "Citizenship Services",
@@ -417,9 +366,7 @@ const ForeignServices = () => {
     },
   ];
 
-  const [activeSlide, setActiveSlide] = useState(
-    foreignServiceSlides[0],
-  );
+  const [activeSlide, setActiveSlide] = useState(foreignServiceSlides[0]);
 
   const foreignSliderRef = useRef(null);
   const [isForeignSliderPaused, setIsForeignSliderPaused] = useState(false);
@@ -453,15 +400,19 @@ const ForeignServices = () => {
   }, [isForeignSliderPaused]);
 
   const scrollToServices = () => {
-    const services = document.getElementById('services-section');
+    const services = document.getElementById("services-section");
     if (!services) return;
     const top = services.getBoundingClientRect().top + window.pageYOffset - 8;
-    window.scrollTo({ top, behavior: 'smooth' });
+    window.scrollTo({ top, behavior: "smooth" });
   };
 
   const parseServiceItem = (item) => {
-    const [titleSegment, bodySegment] = item.split(" — ").map((text) => text.trim());
-    const [heading, subheading] = titleSegment.split(": ").map((text) => text.trim());
+    const [titleSegment, bodySegment] = item
+      .split(" — ")
+      .map((text) => text.trim());
+    const [heading, subheading] = titleSegment
+      .split(": ")
+      .map((text) => text.trim());
 
     return {
       heading: heading || titleSegment,
@@ -481,7 +432,8 @@ const ForeignServices = () => {
           height: "100vh",
           display: "flex",
           alignItems: "center",
-          backgroundImage: "url(\"https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80\")",
+          backgroundImage:
+            'url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -495,7 +447,9 @@ const ForeignServices = () => {
                 role="button"
                 tabIndex={0}
                 onClick={scrollToServices}
-                onKeyDown={(e) => { if (e.key === 'Enter') scrollToServices(); }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") scrollToServices();
+                }}
               >
                 <p className="hero-subtitle has-before">
                   International Visa & Immigration Support
@@ -504,8 +458,8 @@ const ForeignServices = () => {
                   Global Visa Applications and Immigration Services
                 </h1>
                 <p className="hero-text">
-                  EagleCore supports visa applications, work permits,
-                  ETA processing, foreign passes and immigration documents.
+                  EagleCore supports visa applications, work permits, ETA
+                  processing, foreign passes and immigration documents.
                 </p>
               </article>
 
@@ -514,7 +468,9 @@ const ForeignServices = () => {
                 role="button"
                 tabIndex={0}
                 onClick={scrollToServices}
-                onKeyDown={(e) => { if (e.key === 'Enter') scrollToServices(); }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") scrollToServices();
+                }}
               >
                 <p className="hero-subtitle has-before">
                   Work Permit & Residency Guidance
@@ -523,8 +479,8 @@ const ForeignServices = () => {
                   Smooth legal entry and stay for employees and families
                 </h1>
                 <p className="hero-text">
-                  We help prepare applications, track approvals and keep
-                  your international travel plans on schedule.
+                  We help prepare applications, track approvals and keep your
+                  international travel plans on schedule.
                 </p>
               </article>
 
@@ -533,7 +489,9 @@ const ForeignServices = () => {
                 role="button"
                 tabIndex={0}
                 onClick={scrollToServices}
-                onKeyDown={(e) => { if (e.key === 'Enter') scrollToServices(); }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") scrollToServices();
+                }}
               >
                 <p className="hero-subtitle has-before">
                   Visa Processing for Multiple Destinations
@@ -542,8 +500,8 @@ const ForeignServices = () => {
                   USA, Canada, Schengen, UAE and global visas made easier
                 </h1>
                 <p className="hero-text">
-                  Our team manages submission requirements, embassy
-                  appointments and follow up for your chosen destination.
+                  Our team manages submission requirements, embassy appointments
+                  and follow up for your chosen destination.
                 </p>
               </article>
 
@@ -552,7 +510,9 @@ const ForeignServices = () => {
                 role="button"
                 tabIndex={0}
                 onClick={scrollToServices}
-                onKeyDown={(e) => { if (e.key === 'Enter') scrollToServices(); }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") scrollToServices();
+                }}
               >
                 <p className="hero-subtitle has-before">
                   Fast Immigration Document Support
@@ -561,8 +521,8 @@ const ForeignServices = () => {
                   From application to approval with personal follow-up
                 </h1>
                 <p className="hero-text">
-                  Count on us for clear guidance, document checks and
-                  reliable communication at every step.
+                  Count on us for clear guidance, document checks and reliable
+                  communication at every step.
                 </p>
               </article>
             </div>
@@ -570,7 +530,10 @@ const ForeignServices = () => {
             <div className="btn-group">
               <a
                 href="#"
-                onClick={(e) => { e.preventDefault(); scrollToServices(); }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToServices();
+                }}
                 className="btn btn-primary"
               >
                 Learn More
@@ -596,9 +559,7 @@ const ForeignServices = () => {
               textAlign: "center",
             }}
           >
-            <p className="section-subtitle">
-              - International Services -
-            </p>
+            <p className="section-subtitle">- International Services -</p>
 
             <h2 className="h2 section-title">
               Explore Immigration & Travel Services
@@ -611,9 +572,8 @@ const ForeignServices = () => {
                 color: "var(--granite-gray)",
               }}
             >
-              Browse our international immigration, permit,
-              visa and travel support services for foreign
-              nationals and global travellers.
+              Browse our international immigration, permit, visa and travel
+              support services for foreign nationals and global travellers.
             </p>
           </div>
 
@@ -847,10 +807,7 @@ const ForeignServices = () => {
                   {activeSlide.description}
                 </p>
 
-                <a
-                  href={`#${activeSlide.id}`}
-                  className="btn btn-primary"
-                >
+                <a href={`#${activeSlide.id}`} className="btn btn-primary">
                   Explore Service
                 </a>
               </div>
@@ -881,8 +838,7 @@ const ForeignServices = () => {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns:
-                "repeat(auto-fit, minmax(320px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
               gap: "25px",
             }}
           >
@@ -932,7 +888,8 @@ const ForeignServices = () => {
                     }}
                   >
                     {section.items.map((item, itemIndex) => {
-                      const { heading, subheading, body } = parseServiceItem(item);
+                      const { heading, subheading, body } =
+                        parseServiceItem(item);
                       return (
                         <div
                           key={itemIndex}
@@ -1003,7 +960,6 @@ const ForeignServices = () => {
               </div>
             ))}
           </div>
-
         </div>
       </section>
     </>
