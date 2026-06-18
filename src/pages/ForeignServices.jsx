@@ -131,7 +131,7 @@ const ForeignServices = () => {
     {
       id: "eta-services",
 
-      title: "ETA (Electronic Travel Authorization)",
+      title: "ETA ",
 
       shortDescription:
         "Electronic Travel Authorization support for tourists, transit visitors and business travellers.",
@@ -178,7 +178,7 @@ const ForeignServices = () => {
     {
       id: "fnm-extensions",
 
-      title: "FNM (extension & endorsements)",
+      title: "FNM",
 
       shortDescription:
         "Foreign national movement extension and endorsement processing for Kenya stays.",
