@@ -1,6 +1,6 @@
 const socialLinks = [
   {
-    href: "https://www.tiktok.com/",
+    href: "https://www.tiktok.com/@eaglecoreconsultants26",
     label: "TikTok",
     icon: "logo-tiktok",
     className: "tiktok",
